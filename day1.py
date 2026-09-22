@@ -1,4 +1,4 @@
-#Day 1 - My first Phython file
+#Day 1 - My first Python file
 #Author: Gaurav
 
 print("Day 1. My name is gaurav")
