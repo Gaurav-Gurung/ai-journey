@@ -1,7 +1,7 @@
 #Day 1 - My first Python file
 #Author: Gaurav
 
-print("Day 1. My name is gaurav")
+print("Day 1. My name is Gaurav")
 print("I am starting my AI journey today.")
 
 print("2 + 5 =", 2 + 5)
