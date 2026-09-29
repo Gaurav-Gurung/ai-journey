@@ -19,3 +19,4 @@ Learning by building. Every day, something is written, tested, and committed.
 - Day 4 — Built `age_checker.py`. Learned conditionals (`if` / `elif` / `else`), comparison operators, and the importance of condition ordering.
 - Day 5 — Built `multiplication_table.py`, `guess_the_number.py`. Learned `for` loops, `while` loops, `break`, and f-strings. Built a guessing game that loops until the user is correct.
 - Day 6 — Built `temperature_converter.py`. Learned `def`, parameters, `return`, and how to structure a program using functions.
+- Day 7 — Built `shopping_list.py`. Learned lists (`append`, `remove`, `len` (length), indexing, looping) and menu-driven programs with `while True` + `break`.
