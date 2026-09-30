@@ -20,3 +20,4 @@ Learning by building. Every day, something is written, tested, and committed.
 - Day 5 — Built `multiplication_table.py`, `guess_the_number.py`. Learned `for` loops, `while` loops, `break`, and f-strings. Built a guessing game that loops until the user is correct.
 - Day 6 — Built `temperature_converter.py`. Learned `def`, parameters, `return`, and how to structure a program using functions.
 - Day 7 — Built `shopping_list.py`. Learned lists (`append`, `remove`, `len` (length), indexing, looping) and menu-driven programs with `while True` + `break`.
+- Day 8 — 30 Sept 2026 — Built `contact_book.py`. Learned dictionaries (create, `get`, add, delete, loop, membership check, `len()` for empty check) and the pattern for dynamically growing key-value storage.
