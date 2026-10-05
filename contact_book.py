@@ -3,12 +3,16 @@
 contact_book = {}
 
 while True:
-    user_input = int(input("1. Add a contact, 2. View all contacts, 3. Search contact, 4. Delete contact, 5. Exit: "))
+    user_input = int(input("1. Add a contact, 2. View all contacts, 3. Search contact, 4. Delete contact, 5. Edit contact, 6. Exit: "))
+    
     if user_input == 1:
         name = input("Name: ")
         phone = input("Phone: ")
-        contact_book[name] = phone     
-        print(f"{name} added.")
+        if phone == "":
+            print("Phone cannot be empty. Contact not added.")
+        else:
+            contact_book[name] = phone     
+            print(f"{name} added.")
 
     elif user_input == 2:
         if len(contact_book) == 0:
@@ -31,7 +35,20 @@ while True:
             print(f"{name} deleted.")
         else:
             print("User not found.")
+
     elif user_input == 5:
+        name = input("Name to Edit: ")
+        if name in contact_book:
+            new_phone = input("New Phone: ")
+            if new_phone == "":
+                print("Phone cannot be empty. Contact not updated.")
+            elif new_phone != "":
+                contact_book[name] = new_phone    
+                print(f"{name}'s number updated to {new_phone}.")
+        else:
+            print("User not found.")
+    
+    elif user_input == 6:
         print("Goodbye!")
         break
     else:
