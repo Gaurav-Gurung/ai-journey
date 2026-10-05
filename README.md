@@ -21,3 +21,4 @@ Learning by building. Every day, something is written, tested, and committed.
 - Day 6 — Built `temperature_converter.py`. Learned `def`, parameters, `return`, and how to structure a program using functions.
 - Day 7 — Built `shopping_list.py`. Learned lists (`append`, `remove`, `len` (length), indexing, looping) and menu-driven programs with `while True` + `break`.
 - Day 8 — 30 Sept 2026 — Built `contact_book.py`. Learned dictionaries (create, `get`, add, delete, loop, membership check, `len()` for empty check) and the pattern for dynamically growing key-value storage.
+- Day 9 — 5 Oct 2026 — Khan: Unit 7 complete. Extended `contact_book.py` with Edit feature and empty-input validation. Learned how indentation controls code flow and how to validate user input before saving.
