@@ -13,7 +13,6 @@ This repository tracks my daily progress as I learn:
 Learning by building. Every day, something is written, tested, and committed.
 
 ## Progress 
-## Progress
 
 - Session 1 — 18 Sept 2026 — Environment setup (Python 3.14.7, VS Code, Git). First script `day1.py`.
 - Session 2 — 21 Sept 2026 — Built `greetings.py`. Learned `input()`, `print()`, variables, string concatenation.
