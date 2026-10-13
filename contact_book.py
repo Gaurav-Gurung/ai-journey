@@ -8,8 +8,8 @@ while True:
     if user_input == 1:
         name = input("Name: ")
         phone = input("Phone: ")
-        if phone == "":
-            print("Phone cannot be empty. Contact not added.")
+        if name == "" or phone == "":
+            print("Name and phone cannot be empty. Contact not added.")
         else:
             contact_book[name] = phone     
             print(f"{name} added.")
