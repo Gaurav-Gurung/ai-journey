@@ -24,4 +24,4 @@ Learning by building. Every day, something is written, tested, and committed.
 - Session 8 — 30 Sept 2026 — Built `contact_book.py`. Learned dictionaries (create, `get`, add, delete, loop, membership, `len`) and dynamic key-value storage.
 - Session 9 — 5 Oct 2026 — Extended `contact_book.py` with Edit feature and empty-input validation. Learned indentation rules and input validation.
 - Session 10 — 7 Oct 2026 — Built `student_grades.py` using nested dictionaries. Learned nested loops and `sum()`. Attempted list comprehensions (paused — not understood yet).
-- Session 11 — 12 Oct 2026 — Python review drills (`review.py`): loops through lists and dictionaries, functions, menu-driven programs. Rewrote `student_grades.py` with nested loops. Learned how `for a, b in dict.items()` unpacks key-value pairs.
+- Session 11 — 12–13 Oct 2026 — Python review drills (`review.py`): loops through lists and dictionaries, functions, menu-driven programs. Rewrote `student_grades.py` with nested loops. Built `todo_list.py` — first CRUD app using list of dictionaries. Learned `for a, b in dict.items()` unpacking and chained comparisons (`1 <= x <= n`).
