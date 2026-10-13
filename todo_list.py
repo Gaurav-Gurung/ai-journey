@@ -1,54 +1,74 @@
 # My first todo list application in Python
 
 tasks = []
-number_of_tasks = 1
 
 while True:
-    user_input = input("Enter 1 to add a task, Enter 2 to view tasks, Enter 3 to mark task as complete, Enter 4 to remove task or Enter 5 to exit: ")
+    user_input = input("Please choose one of the following options: 1. Add a task 2. View tasks 3. Mark task as done 4. Remove task 5. Exit ")
 
     if user_input == "1":
-        task_name = input("Enter the task name: ")
+        task_name = input("Task name: ")
         if task_name == "":
-            print("Task name cannot be empty. Task not added.")
+            print("Task name cannot be empty.")
         else:
-            tasks.append(task_name)
-            print(f"Task '{task_name}' added to the list.")
+            new_task = {}
+            new_task["name"] = task_name
+            new_task["done"] = False
+            tasks.append(new_task)
+            print(f"Task '{task_name}' added.")
 
     elif user_input == "2":
         if len(tasks) == 0:
-            print("No tasks added yet.")
+            print("No tasks yet.")
         else:
-            print("Tasks in the list: ")
+            number = 1
             for task in tasks:
-                print(f" {number_of_tasks}. {task}")
-                number_of_tasks += 1
+                if task["done"]:
+                    status = "[X]"
+                else:
+                    status = "[ ]"
+                print(f"{number}. {status} {task['name']}")
+                number += 1
 
     elif user_input == "3":
-        if len(tasks) == 0:
-            print("No tasks to mark as complete.")
+        if len (tasks) == 0:
+            print("No tasks to mark.")
         else:
-            print("Tasks in the list: ")
+            num = 1
             for task in tasks:
-                print(f" {number_of_tasks}. {task}")
-                number_of_tasks += 1    
+                if task["done"]:
+                    status = "[X]"
+                else:
+                    status = "[ ]"
+                print(f"{num}. {status} {task['name']}")
+                num += 1
+
+            pick = int(input("Which task number to mark done? "))
+            if 1 <= pick <= len(tasks):
+                task = tasks[pick - 1]
+                task["done"] = True
+                print(f"Task {pick} marked as done.")
+            else:
+                print("Invalid task number.")
 
     elif user_input == "4":
         if len(tasks) == 0:
             print("No tasks to remove.")
         else:
-            print("Tasks in the list: ")
+            num = 1
             for task in tasks:
-                print(f" {number_of_tasks}. {task}")
-                number_of_tasks += 1
-            task_to_remove = input("Enter the task name to remove: ")
-            if task_to_remove in tasks:
-                tasks.remove(task_to_remove)
-                print(f"Task '{task_to_remove}' removed from the list.")
-            else:
-                print(f"Task '{task_to_remove}' not found in the list.")                            
-    elif user_input == "5":
-        print("Exiting the application.")
-        break   
+                print(f"{num}. {task['name']}")
+                num += 1
 
+            pick = int(input("Which task number to remove? "))
+            if 1 <= pick <= len(tasks):
+                removed_task = tasks[pick - 1]
+                tasks.remove(removed_task)
+                print(f"Task '{removed_task['name']}' removed.")
+            else:
+                print("Invalid task number.")
+
+    elif user_input == "5":
+        print("Goodbye!")
+        break
     else:
-        print("Invalid input. Please enter the right option.")
+        print("Invalid input.")
