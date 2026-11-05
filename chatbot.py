@@ -46,7 +46,7 @@ while True:
         chat_history.append({"role": "assistant", "content": ai_text})
 
         # 6. Save to file
-        with open("chat_log.txt", "a", encoding="utf-8") as file:
+        with open("chat_log.txt", "a") as file:
             file.write(f"You: {user_input}\n")
             file.write(f"AI: {ai_text}\n")
             file.write("--------------------------\n")
